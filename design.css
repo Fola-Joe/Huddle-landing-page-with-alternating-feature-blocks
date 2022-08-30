@@ -125,8 +125,11 @@ header {
 
 /* Section */
 main {
-    max-width: 330px;
+    max-width: 340px;
     font-family: 'Open Sans', sans-serif;
+}
+.first-section {
+    margin-top: 4rem;
 }
 section {
     box-shadow: 5px 5px 10px hsl(208, 11%, 55%);
@@ -148,4 +151,33 @@ section > p {
     font-size: 0.9rem;
     line-height: 1.35;
     color: hsl(208, 11%, 55%);
+}
+.fourth-section {
+    margin-top: 8rem;
+    margin-bottom: -4rem;
+    z-index: 1;
+    background-color: white;
+    padding-left: 0;
+    padding-right: 0;
+}
+.fourth-section > h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+.fourth-section > button {
+    background-color: hsl(322, 100%, 66%);
+    font-size: 0.7rem;
+    padding: 0.85rem;
+    color: white;
+    width: 12rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+footer {
+    z-index: -1;
+    background-color: hsl(192, 100%, 9%);
+    padding: 8rem 0 2rem;
 }
