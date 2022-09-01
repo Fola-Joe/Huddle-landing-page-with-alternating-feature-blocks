@@ -101,6 +101,7 @@ header {
     margin-bottom: 5rem;
 }
 .write-up > h1 {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     margin: 0 1.8rem 2rem;
     font-weight: 700;
@@ -147,17 +148,17 @@ section {
     border-radius: 12px;
     padding: 3rem 2rem;
 }
-section > img {
+.section-img > img {
     width: 100%;
 }
-section > h2 {
+.section-info > h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     margin: 3rem 0 1.5rem;
     color: hsl(192, 100%, 9%);
 }
-section > p {
+.section-info > p {
     font-size: 0.9rem;
     line-height: 1.35;
     color: hsl(208, 11%, 55%);
@@ -279,4 +280,76 @@ footer {
     font-size: 0.65rem;
     text-align: center;
     font-weight: 400;
+}
+
+@media screen and (min-width: 960px) {
+    br {
+        display: none;
+    }
+    header {
+        padding: 2rem 0;
+    }
+    .top {
+        padding: 0 4rem;
+    }
+    .top > img {
+        width: 15%;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        align-items: center;
+        padding: 0 4rem;
+    }
+    .header-img > img {
+        width: 100%;
+    }
+    .write-up {
+        text-align: left;
+        padding-right: 5rem;
+    }
+    .write-up > h1 {
+        margin: 0 0 1.8rem;
+        font-size: 2.5rem;
+    }
+    .write-up > p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    .write-up > button {
+        width: 17rem;
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+    main {
+        max-width: 85%;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 4rem;
+        padding-left: 6rem;
+        padding-right: 1rem;
+    }
+    .section-img > img {
+        width: 80%;
+    }
+    .section-info {
+        text-align: left;
+        padding-right: 2.5rem;
+    }
+    .section-info > h2 {
+        margin: 0 0 1.5rem;
+        font-size: 1.57rem;
+    }
+    .section-info > p {
+        font-size: 1.05rem;
+    }
+    .first-section > .section-img {
+        order: 2;
+    }
+    .third-section > .section-img {
+        order: 2;
+    }
 }
