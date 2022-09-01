@@ -87,6 +87,11 @@ header {
     width: 7rem;
     border-radius: 2rem;
     color: hsl(192, 100%, 9%);
+    box-shadow: 0 5px 10px -6px hsl(208, 11%, 55%);
+}
+.top > button:hover {
+    cursor: pointer;
+    color: hsl(208, 11%, 55%);
 }
 .top {
     display: flex;
@@ -118,6 +123,11 @@ header {
     font-weight: 700;
     color: white;
     margin-bottom: 3.5rem;
+    box-shadow: 0 5px 30px -15px hsl(322, 100%, 66%);
+}
+.write-up > button:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 .header-img > img {
     width: 20rem;
@@ -132,7 +142,7 @@ main {
     margin-top: 4rem;
 }
 section {
-    box-shadow: 5px 5px 10px hsl(208, 11%, 55%);
+    box-shadow: 0 5px 30px -15px hsl(208, 11%, 55%);
     margin-top: 3rem;
     border-radius: 12px;
     padding: 3rem 2rem;
@@ -153,12 +163,14 @@ section > p {
     color: hsl(208, 11%, 55%);
 }
 .fourth-section {
+    position: relative;
     margin-top: 8rem;
-    margin-bottom: -4rem;
+    margin-bottom: 0;
     z-index: 1;
     background-color: white;
     padding-left: 0;
     padding-right: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 .fourth-section > h3 {
     font-family: 'Poppins', sans-serif;
@@ -174,11 +186,16 @@ section > p {
     width: 12rem;
     border: none;
     border-radius: 2rem;
+    box-shadow: 0 5px 30px -12px hsl(322, 100%, 66%);
+}
+.fourth-section > button:hover {
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 /* Footer */
 footer {
-    z-index: -1;
+    position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background-color: hsl(192, 100%, 9%);
@@ -186,6 +203,7 @@ footer {
     /* text-align: left; */
     color: white;
     width: 100%;
+    margin-top: -4rem;
 }
 .footer-img {
     margin-bottom: 2rem;
@@ -229,6 +247,10 @@ footer {
     color: white;
     margin-top: 1.5rem;
 }
+.contact > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 .icons {
     text-align: center;
     margin-bottom: 2rem;
@@ -237,6 +259,11 @@ footer {
     border: 1px solid white;
     border-radius: 50%;
     margin: 0 0.3rem 0;
+}
+.icons > i:hover {
+    cursor: pointer;
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
 }
 #fb {
     padding: 0.4rem 0.6rem;
