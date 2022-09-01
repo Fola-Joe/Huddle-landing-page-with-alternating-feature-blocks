@@ -352,4 +352,23 @@ footer {
     .third-section > .section-img {
         order: 2;
     }
+    .fourth-section {
+        max-width: 60%;
+        margin-left: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .fourth-section > h3 {
+        margin: 1.5rem 0 0;
+        font-size: 2rem;
+    }
+    .fourth-section > button {
+        margin: 0;
+        font-size: 1.4rem;
+        width: 25rem;
+        padding: 1.4rem;
+        border-radius: 3.5rem;
+        font-weight: 700;
+    }
 }
