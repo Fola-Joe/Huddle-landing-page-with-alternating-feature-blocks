@@ -183,15 +183,17 @@ footer {
     font-weight: 400;
     background-color: hsl(192, 100%, 9%);
     padding: 9rem 0 4rem;
-    text-align: left;
+    /* text-align: left; */
     color: white;
     width: 100%;
 }
 .footer-img {
     margin-bottom: 2rem;
+    text-align: left;
+    padding-left: 1rem;
 }
 .footer-img > img {
-    background-color: white;
+    width: 11rem;
 }
 .location {
     display: flex;
@@ -199,21 +201,29 @@ footer {
     /* justify-content: space-evenly; */
     gap: 1.9rem;
     margin-bottom: 2rem;
+    text-align: left;
+    padding-left: 1rem;
 }
 .phone {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 2rem;
+    text-align: left;
+    padding-left: 1rem;
 }
 .email {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 4rem;
+    text-align: left;
+    padding-left: 1rem;
 }
 .contact {
     margin-bottom: 3rem;
+    text-align: left;
+    padding-left: 1rem;
 }
 .contact > p {
     color: white;
