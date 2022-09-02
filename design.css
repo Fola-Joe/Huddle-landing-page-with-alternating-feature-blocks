@@ -92,6 +92,7 @@ header {
 .top > button:hover {
     cursor: pointer;
     color: hsl(208, 11%, 55%);
+    transition: ease-in 0.2s;
 }
 .top {
     display: flex;
@@ -129,6 +130,7 @@ header {
 .write-up > button:hover {
     cursor: pointer;
     opacity: 0.6;
+    transition: ease-in 0.2s;
 }
 .header-img > img {
     width: 20rem;
@@ -192,6 +194,7 @@ section {
 .fourth-section > button:hover {
     cursor: pointer;
     opacity: 0.6;
+    transition: ease-in 0.2s;
 }
 
 /* Footer */
@@ -201,10 +204,9 @@ footer {
     font-weight: 400;
     background-color: hsl(192, 100%, 9%);
     padding: 9rem 0 4rem;
-    /* text-align: left; */
     color: white;
     width: 100%;
-    margin-top: -4rem;
+    margin-top: -4.5rem;
 }
 .footer-img {
     margin-bottom: 2rem;
@@ -217,12 +219,14 @@ footer {
 .location {
     display: flex;
     align-items: flex-start;
-    /* justify-content: space-evenly; */
     gap: 1.9rem;
     margin-bottom: 2rem;
     text-align: left;
     padding-left: 1rem;
 }
+.location > p{
+    line-height: 1.5;
+} 
 .phone {
     display: flex;
     align-items: center;
@@ -265,6 +269,7 @@ footer {
     cursor: pointer;
     color: hsl(322, 100%, 66%);
     border-color: hsl(322, 100%, 66%);
+    transition: ease-in 0.2s;
 }
 #fb {
     padding: 0.4rem 0.6rem;
@@ -281,19 +286,32 @@ footer {
     text-align: center;
     font-weight: 400;
 }
+ 
+@media screen and (min-width:376px) {
+    header {
+        background-image: url(images/bg-hero-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+    }
+}  
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 900px) {
     br {
         display: none;
     }
     header {
-        padding: 2rem 0;
+        padding: 2rem 0 4rem;
     }
     .top {
         padding: 0 4rem;
     }
     .top > img {
         width: 15%;
+    }
+    .top > button {
+        width: 10rem;
+        padding: 0.6rem;
     }
     .header {
         display: grid;
@@ -323,6 +341,7 @@ footer {
     }
     main {
         max-width: 85%;
+        margin-top: 5rem;
     }
     section {
         display: grid;
@@ -370,5 +389,37 @@ footer {
         padding: 1.4rem;
         border-radius: 3.5rem;
         font-weight: 700;
+    }
+
+    /* Footer  */
+    .footer-img {
+        padding-left: 8.5%;
+        margin-bottom: 2.5rem;
+    }
+    .footer-img > img {
+        width: 20%;
+    }
+    #footer-details {
+        display: grid;
+        grid-template-columns: 1.1fr 1fr 1fr;
+        align-items: flex-start;
+        column-gap: 7rem;      
+        padding-left: 7.5%;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact > p {
+        margin: 0 0 1.5rem;
+        font-size: 1.1rem;
+    }
+    .icons {
+        text-align: left;
+    }
+    .copyright > p {
+        text-align: right;
+        padding-right: 5%;
+        font-size: 0.8rem;
     }
 }
